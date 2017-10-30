@@ -1,0 +1,12 @@
+*CREATE TABLE PostsDB 
+(
+    pUK int PRIMARY KEY,
+    pTitle char(100),
+    pPicVid char(150),
+    pText varchar(2500),
+    pDislikes int,
+    pFUIL int,
+    /*pCommentAmount int (verm. besser mit SELECT COUNT Lösbar) */
+    pTopic char(50),
+    pTags char(500)
+);
