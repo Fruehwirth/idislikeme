@@ -1,0 +1,7 @@
+*CREATE TABLE Topics 
+(
+    tUK int PRIMARY KEY,
+    tTopic char(50),
+    tDate date,
+    tEntryAmount int
+);

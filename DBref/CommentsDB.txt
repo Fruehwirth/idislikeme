@@ -1,0 +1,11 @@
+*CREATE TABLE CommentsDB 
+(
+    cUK int PRIMARY KEY,
+    cAuthor int, /* uUK */
+    cReferingTo int, /* pUK / cUK */
+    cDate date,
+    cTime time,
+    cText varchar(2500),
+    cDislikes int,
+    cFUIL int
+);
