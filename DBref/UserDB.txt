@@ -1,0 +1,11 @@
+//UserDB Feldreferenz
+*CREATE TABLE UserDB 
+(
+    uUK        int PRIMARY KEY,
+    uName      char(25),
+    uPassword  char(100),
+    uProfPic   char(150),
+    uProfDesc  varchar(2000),
+    uLevel     int,
+    uCreaDate  date
+);
