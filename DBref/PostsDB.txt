@@ -1,6 +1,7 @@
 *CREATE TABLE PostsDB 
 (
     pUK int PRIMARY KEY,
+    pDate date,
     pTitle char(100),
     pPicVid char(150),
     pText varchar(2500),
