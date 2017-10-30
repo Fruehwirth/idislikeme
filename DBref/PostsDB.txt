@@ -2,6 +2,7 @@
 (
     pUK int PRIMARY KEY,
     pDate date,
+    pTime time,
     pTitle char(100),
     pPicVid char(150),
     pText varchar(2500),
