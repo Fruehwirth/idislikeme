@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="database" uuid="99ec0bf7-d10e-469e-b17f-0e25ad5b5c26">
+      <driver-ref>hsqldb.local</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.hsqldb.jdbc.JDBCDriver</jdbc-driver>
+      <jdbc-url>jdbc:hsqldb:file:C:\Users\Michael\4ahit-1819-Fruehwirth\Nachpruefung\Online-Ticket-Shop\database/database</jdbc-url>
+    </data-source>
+  </component>
+</project>

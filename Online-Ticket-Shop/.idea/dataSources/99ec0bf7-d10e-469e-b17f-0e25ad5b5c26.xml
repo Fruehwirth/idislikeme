@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="database">
+  <database-model serializer="dbm" rdbms="HSQLDB" format-version="4.0">
+    <root id="1"/>
+    <database id="2" parent="1" name="PUBLIC">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="INFORMATION_SCHEMA"/>
+    <schema id="4" parent="2" name="PUBLIC">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="5" parent="2" name="SYSTEM_LOBS"/>
+    <table id="6" parent="4" name="BUCHUNGEN"/>
+    <table id="7" parent="4" name="EVENTS"/>
+    <column id="8" parent="6" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(32)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="9" parent="6" name="FIRSTNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="10" parent="6" name="LASTNAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="11" parent="6" name="EVENT_ID">
+      <Position>4</Position>
+      <DataType>INTEGER(32)|4</DataType>
+    </column>
+    <column id="12" parent="6" name="NUMTICKETS">
+      <Position>5</Position>
+      <DataType>INTEGER(32)|4</DataType>
+    </column>
+    <column id="13" parent="6" name="TIMEDATE">
+      <Position>6</Position>
+      <DataType>TIMESTAMP(26)|93</DataType>
+    </column>
+    <column id="14" parent="6" name="sum">
+      <Position>7</Position>
+      <DataType>DOUBLE(64)|8</DataType>
+    </column>
+    <key id="15" parent="6" name="SYS_PK_10095">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="16" parent="6" name="BUCHUNGEN_EVENTS_ID_FK">
+      <ColNames>EVENT_ID</ColNames>
+      <RefSchemaName>PUBLIC</RefSchemaName>
+      <RefTableName>EVENTS</RefTableName>
+      <RefKeyName>SYS_PK_10092</RefKeyName>
+      <RefColNames>ID</RefColNames>
+      <OnDelete>no-action</OnDelete>
+      <OnUpdate>no-action</OnUpdate>
+    </foreign-key>
+    <column id="17" parent="7" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(32)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="18" parent="7" name="EVENTNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="19" parent="7" name="DATEANDTIME">
+      <Position>3</Position>
+      <DataType>TIMESTAMP(26)|93</DataType>
+    </column>
+    <column id="20" parent="7" name="AVALIBLETICKETS">
+      <Position>4</Position>
+      <DataType>INTEGER(32)|4</DataType>
+    </column>
+    <column id="21" parent="7" name="TICKETS">
+      <Position>5</Position>
+      <DataType>INTEGER(32)|4</DataType>
+    </column>
+    <column id="22" parent="7" name="PRICE">
+      <Position>6</Position>
+      <DataType>DOUBLE(64)|8</DataType>
+    </column>
+    <key id="23" parent="7" name="SYS_PK_10092">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
